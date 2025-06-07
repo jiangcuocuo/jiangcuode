@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>像素电子宠物</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/pet-icon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>像素电子宠物</h1>
+            <p class="subtitle">照顾你的虚拟小伙伴，让它健康快乐！</p>
+        </div>
+        
+        <div class="pet-container">
+            <div class="bubble" id="bubble">我饿了！</div>
+            <div class="pet-display">
+                <div class="pet" id="pet">
+                    <div class="pet-body"></div>
+                    <div class="pet-horn"></div>
+                    <div class="pet-face">
+                        <div class="pet-eye left"></div>
+                        <div class="pet-eye right"></div>
+                        <div class="pet-mouth" id="pet-mouth"></div>
+                    </div>
+                    <div class="pet-feet left"></div>
+                    <div class="pet-feet right"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="stats-container">
+            <div class="stat hunger">
+                <div class="stat-name">
+                    <span>饥饿度</span>
+                    <span id="hunger-value">80%</span>
+                </div>
+                <div class="stat-bar">
+                    <div class="stat-fill" id="hunger-bar"></div>
+                </div>
+            </div>
+            
+            <div class="stat happiness">
+                <div class="stat-name">
+                    <span>快乐度</span>
+                    <span id="happiness-value">90%</span>
+                </div>
+                <div class="stat-bar">
+                    <div class="stat-fill" id="happiness-bar"></div>
+                </div>
+            </div>
+            
+            <div class="stat cleanliness">
+                <div class="stat-name">
+                    <span>清洁度</span>
+                    <span id="cleanliness-value">70%</span>
+                </div>
+                <div class="stat-bar">
+                    <div class="stat-fill" id="cleanliness-bar"></div>
+                </div>
+            </div>
+            
+            <div class="stat energy">
+                <div class="stat-name">
+                    <span>精力值</span>
+                    <span id="energy-value">60%</span>
+                </div>
+                <div class="stat-bar">
+                    <div class="stat-fill" id="energy-bar"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <button class="action-btn feed-btn" id="feed-btn">
+                <i class="fas fa-utensils"></i>
+                <span>喂食</span>
+            </button>
+            <button class="action-btn play-btn" id="play-btn">
+                <i class="fas fa-gamepad"></i>
+                <span>玩耍</span>
+            </button>
+            <button class="action-btn clean-btn" id="clean-btn">
+                <i class="fas fa-bath"></i>
+                <span>清洁</span>
+            </button>
+            <button class="action-btn sleep-btn" id="sleep-btn">
+                <i class="fas fa-bed"></i>
+                <span>睡觉</span>
+            </button>
+        </div>
+        
+        <div class="message-box" id="message-box">
+            欢迎照顾你的电子宠物！点击按钮与它互动吧！
+        </div>
+        
+        <div class="footer">
+            本地电子宠物 v1.0 | 所有数据仅保存在你的浏览器中
+        </div>
+    </div>
+    
+    <div class="notification" id="notification">宠物需要休息！</div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
